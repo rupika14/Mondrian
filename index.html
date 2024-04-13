@@ -5,125 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian</title>
-  <style>
-    
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      height: 748px;
-      width: 748px;
-      display: grid;
-      background-color: #000;
-      grid-template-columns: 320px 198px 153px 50px;
-      grid-template-rows: 414px 130px 155px 22px;
-      gap: 9px;
-    }
-
-    .item {
-      background-color: #F0F1EC;
-    }
-
-    .red {
-      background-color: #E72F24;
-    }
-
-    .white1 {
-      grid-column: span 3;
-    }
-
-    .white2 {
-      grid-row: span 2;
-    }
-
-    .white3 {
-      grid-area: 2 / 2 / 4 /4
-    }
-
-    .blue {
-      background-color: #004592;
-      border-bottom: 10px solid #000;
-    }
-
-    .white4 {
-      grid-row: span 2;
-    }
-
-    .yellow {
-      background-color: #F9D01E;
-    }
-
-    .black {
-      background-color: #232629;
-    }
-
-
-    .container1{
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-    #title{
-      font-size: 2.5rem;
-      font-family:'Courier New', Courier, monospace;
-      
-    }
-
-    .container2{
-        display: grid;
-        grid-template-columns: 500px 50px;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    #button{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        position: relative;
-        background-color: orange;
-        border: 50%;
-        font-size: 45px;
-    }
-
-   
-    
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
- 
-  
-  
   <div class="container1">
     <div class="container2">
-        <h1 id="title">Mondrian Composition</h1>
-        <a id="button"  href="next.html">▶️</a>
+      <h1 id="title">Mondrian Composition</h1>
+      <!-- Add a button with id "colorButton" -->
+      <button id="colorButton">Change Colors</button>
     </div>
-
     <div class="container">
       <div class="item red"></div>
       <div class="item white1"></div>
       <div class="item white2"></div>
       <div class="item white3"></div>
-  
       <div class="item blue"></div>
       <div class="item white4"></div>
-  
       <div class="item"></div>
       <div class="item yellow"></div>
       <div class="item black"></div>
     </div>
-    
-    
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

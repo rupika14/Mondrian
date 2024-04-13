@@ -9,7 +9,7 @@ document.getElementById("colorButton").addEventListener("click", function() {
     });
   });
   
-  document.getElementById("colorButton2").addEventListener("click", function() {
+document.getElementById("colorButton2").addEventListener("click", function() {
     // Get all elements with class "item"
     var items = document.querySelectorAll(".item");
     // Loop through each element and change its background color
@@ -19,4 +19,3 @@ document.getElementById("colorButton").addEventListener("click", function() {
       item.style.backgroundColor = randomColor;
     });
   });
-  
